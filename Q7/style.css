@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(43,3,63,1) 12%, rgba(60,4,74,1) 17%, rgba(94,7,97,1) 27%, rgba(121,9,115,1) 35%, rgba(108,25,130,1) 42%, rgba(101,34,139,1) 46%, rgba(84,54,158,1) 55%, rgba(71,70,173,1) 62%, rgba(52,93,195,1) 72%, rgba(46,106,201,1) 75%, rgba(39,123,210,1) 79%, rgba(35,131,214,1) 81%, rgba(31,140,218,1) 83%, rgba(26,153,225,1) 86%, rgba(20,165,231,1) 89%, rgba(0,212,255,1) 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader::before {
+    content: "";
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(8px);
+    position: absolute;
+    width: 140px;
+    height: 55px;
+    z-index: 20;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    border-top: none;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.082);
+    animation: anim2 2s infinite;
+  }
+  
+  .loader div {
+    background: rgb(228, 228, 228);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    z-index: -1;
+    animation: anim 2s infinite linear;
+    animation-delay: calc(-0.3s * var(--i));
+    transform: translateY(5px);
+    margin: 0.2em;
+  }
+  
+  @keyframes anim {
+    0%,
+    100% {
+      transform: translateY(5px);
+    }
+    50% {
+      transform: translateY(-65px);
+    }
+  }
+  
+  @keyframes anim2 {
+    0%,
+    100% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+  }

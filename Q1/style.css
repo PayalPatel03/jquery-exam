@@ -1,0 +1,17 @@
+#head{
+    text-align: center;
+    color: chartreuse;
+}
+body{
+    background-color: coral;
+}
+.ah-words-wrapper{
+    color: white;
+}
+
+#img>img{
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+    
+}

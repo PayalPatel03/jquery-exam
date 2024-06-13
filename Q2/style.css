@@ -1,0 +1,28 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+  }
+#sale{
+    text-align: center;
+    margin: 20px;
+}
+#sale>h2{
+    color: coral;
+}
+#sale>h3{
+    color: crimson;
+}
+#sale>img{
+    border-radius: 40px;
+}
+body{
+    background-color: aquamarine;
+}

@@ -1,0 +1,108 @@
+#container{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+/*-----------------------sidebar---------------------*/
+#sidebar{
+    height: 100vh;
+    width: 20%;
+    /* height: 100%;
+    width: 354px; */
+    /* position: fixed; */
+    left:0;
+    top:0;
+    background-color: beige;
+}
+
+
+#sidebar>i{
+    font-size: 2rem;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+.logo>i{
+    /* font-size: 2.5rem; */
+    padding: 10px;
+    cursor: pointer;
+}
+.logo>span{
+    /* background-color: aliceblue; */
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    padding: 10px;  
+}
+.logo{
+    margin: 10px;
+}
+
+
+#bar{
+    background-color: #e0ee66;
+    height: 200px;
+}
+/*header*/
+
+#header{
+    display: flex;
+    justify-content:space-around;
+    gap: 10px;
+    padding: 20px;
+   
+}
+
+#Dashboard{
+    width: 100%;
+    
+}
+@media (max-width:600px) {
+     /*container*/
+    
+     #container{
+        overflow-y: hidden;
+       }
+       /*main-cont*/
+       
+       /*sidebar starts*/
+    
+      #sidebar{
+        width: 200px;
+        display: none;
+        padding-top: 100px;
+        position: absolute;
+        z-index: 15;
+        background-color: #90e0ef;
+    }
+    
+    #sidebar i, span{
+      font-size: small;
+      margin: 10px 0px 10px;
+    }
+    
+    #header{
+      width: 100% !important;
+      gap: 2px;
+    
+    }
+    .fa-list{
+      font-size: x-large !important;
+    }
+    
+    .fa-bell{
+      font-size: larger !important;
+    }
+    
+    .fa-copy{
+      font-size: larger !important;
+    }
+    /*header*/
+    #header input{
+        display: none;
+      }
+}
+   

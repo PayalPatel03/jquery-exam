@@ -1,0 +1,21 @@
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.swiper-slide>img{
+  object-fit: cover;
+  object-position: center;
+}
+
+.swiper>h1{
+  text-align: center;
+  color: coral;
+}
+
+body{
+  padding: 50px;
+  background-color:blanchedalmond;
+}
+
+
